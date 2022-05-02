@@ -1,20 +1,14 @@
 package Graffics;
 
-import java.awt.event.WindowListener;
+
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.event.ActionListener;
+
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-import javax.swing.AbstractButton;
-import javax.swing.JButton;
+
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.plaf.basic.BasicButtonListener;
+
 
 import Controller.ButtonListener;
 
