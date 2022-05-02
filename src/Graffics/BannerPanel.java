@@ -1,5 +1,6 @@
 package Graffics;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 
@@ -13,23 +14,32 @@ public class BannerPanel extends JPanel {
 	public BannerPanel()
 	{
 		
+		setLayout(new BorderLayout());
 		setBackground(Color.white);
+		setPreferredSize(new Dimension(1000,35));
 		
+		JPanel west= new JPanel();
+		JPanel center= new JPanel();
+		JPanel east= new JPanel();
+
+		west.setBackground(Color.white);
+		add(west,BorderLayout.WEST);
+		west.setPreferredSize(new Dimension(200,35));
 		
-		JButton button1= new JButton();
-		JButton button2= new JButton();
-		JButton button3= new JButton();
+		center.setBackground(Color.white);
+		add(center,BorderLayout.CENTER);
 		
-		//button1.setBounds(100, 100,200, 200);
-		button1.setText("Quit");
-		//button1.setBounds(100, 100,200, 200);
-		button2.setText("addPlayer");
-		//button1.setBounds(100, 100,200, 200);
-		button3.setText("Done");
+		east.setBackground(Color.white);
+		add(east,BorderLayout.EAST);
+		east.setPreferredSize(new Dimension(200,35));
+		
+		JButton button1= new JButton("Quit");		
+		JButton button2= new JButton("Add Player");		
+		JButton button3= new JButton("Done");
 			
-		add(button1);
-		add(button2);
-		add(button3);
+		west.add(button1);
+		west.add(button2);
+		center.add(button3);
 	}
 	
 	
