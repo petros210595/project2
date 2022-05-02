@@ -13,6 +13,7 @@ public class HallOfFamePanel extends JPanel{
 	{
 		
 		setBackground(Color.green);
+				
 	}
 
 }
